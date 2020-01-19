@@ -3,7 +3,7 @@
 $input = json_decode(file_get_contents('php://input'), true);
 
 if(isset($input['username']) && isset($input['password']) &&
-   $input['username'] == 'dawn' && $input['password'] == 'BaileyBear') {
+   $input['username'] == 'admin' && $input['password'] == '123') {
   // Successfully authenticated, initialize session and return success.
   session_save_path('/home/users/web/b454/ipg.kborvonarl/sessions');
   session_start();
