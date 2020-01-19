@@ -1,0 +1,108 @@
+@import "../../../less/theme-default.less";
+
+.savvy-item {
+  &.small {
+    border: solid 0.1em rgb(68,68,68);
+    border-radius: 0.2em;
+
+    -moz-box-shadow: 0.5em 0.5em 0.5em rgba(68,68,68,0.6);
+    -webkit-box-shadow: 0.5em 0.5em 0.5em rgba(68,68,68,0.6);
+    box-shadow: 0.5em 0.5em 0.5em rgba(68,68,68,0.6);
+
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
+    zoom: 1;
+    cursor: pointer;
+
+    img {
+      border: 0.1em white solid;
+    }
+
+    &:hover {
+      -moz-box-shadow: none;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+
+      filter: none;
+      -ms-filter: none;
+      zoom: none;      
+
+      color: @color-2;
+
+      img {
+        border: 0.1em @color-2 solid;
+      }
+    }
+
+    .active {
+      cursor: pointer;
+
+      img {
+        border: 0.1em white solid;
+      }
+    }
+
+    .price {
+      margin-top: 0.6em;
+    }
+
+    h4 {
+      text-align: center;
+    }
+  }
+
+  &.large {
+    margin: 0;
+    padding: 0;
+    border: none;
+
+    .price {
+      float: right;
+      margin-top: 0.2em;
+      font-size: 0.7em;
+    }
+  }
+
+  .image {
+    text-align: center;
+
+    img {
+      max-width:100%;
+      height:auto;
+    }
+  }
+
+  .sold {
+    color: red;
+    font-weight: bold;
+  }
+
+  .dimensions {
+    font-size: 0.7em;
+    padding-top: 0.7em;
+  }
+
+  .buttons {
+    margin-top: 1em;
+    padding-top: 1em;
+    text-align: center;
+
+    div {
+      display: inline;
+      cursor: pointer;
+      margin: 0 0.2em;
+    }
+
+    .right {
+      float: right;
+    }
+
+    .left {
+      float: left;
+    }
+  }
+
+  .social-icon:hover {
+    transform: scale(1.1);
+  }
+}

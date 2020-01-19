@@ -1,0 +1,305 @@
+.text-shadow (@string: 0 1px 3px rgba(0, 0, 0, 0.25)) {
+	text-shadow: @string;
+}
+.box-shadow (@string) {
+	-webkit-box-shadow: @string;
+	-moz-box-shadow:    @string;
+	box-shadow:         @string;
+}
+.drop-shadow (@x: 0, @y: 1px, @blur: 2px, @spread: 0, @alpha: 0.25) {
+	-webkit-box-shadow:	@x @y @blur @spread rgba(0, 0, 0, @alpha);
+	-moz-box-shadow:	@x @y @blur @spread rgba(0, 0, 0, @alpha);
+	box-shadow:		@x @y @blur @spread rgba(0, 0, 0, @alpha);
+}
+.inner-shadow (@x: 0, @y: 1px, @blur: 2px, @spread: 0, @alpha: 0.25) {
+	-webkit-box-shadow: inset @x @y @blur @spread rgba(0, 0, 0, @alpha);
+	-moz-box-shadow:    inset @x @y @blur @spread rgba(0, 0, 0, @alpha);
+	box-shadow:         inset @x @y @blur @spread rgba(0, 0, 0, @alpha);
+}
+
+.box-sizing (@type: border-box) {
+	-webkit-box-sizing: @type;
+	-moz-box-sizing:    @type;
+	box-sizing:         @type;
+}
+
+.border-radius (@radius: 5px) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius:    @radius;
+	-ms-border-radius:     @radius;
+    -o-border-radius:      @radius;
+	border-radius:         @radius;
+
+	-moz-background-clip:    padding;
+	-webkit-background-clip: padding-box;
+	background-clip:         padding-box;
+}
+.border-radiuses (@topright: 0, @bottomright: 0, @bottomleft: 0, @topleft: 0) {
+	-webkit-border-top-right-radius:    @topright;
+	-webkit-border-bottom-right-radius: @bottomright;
+	-webkit-border-bottom-left-radius:  @bottomleft;
+	-webkit-border-top-left-radius:     @topleft;
+
+	-moz-border-radius-topright:        @topright;
+	-moz-border-radius-bottomright:     @bottomright;
+	-moz-border-radius-bottomleft:      @bottomleft;
+	-moz-border-radius-topleft:         @topleft;
+
+	border-top-right-radius:            @topright;
+	border-bottom-right-radius:         @bottomright;
+	border-bottom-left-radius:          @bottomleft;
+	border-top-left-radius:             @topleft;
+
+	-moz-background-clip:    padding; 
+	-webkit-background-clip: padding-box; 
+	background-clip:         padding-box; 
+}
+
+.opacity (@opacity: 0.5) {
+	-webkit-opacity: 	@opacity;
+	-moz-opacity: 		@opacity;
+	opacity: 		@opacity;
+}
+
+.gradient (@startColor: #eee, @endColor: white) {
+	background-color: @startColor;
+	background: -webkit-gradient(linear, left top, left bottom, from(@startColor), to(@endColor));
+	background: -webkit-linear-gradient(top, @startColor, @endColor);
+	background: -moz-linear-gradient(top, @startColor, @endColor);
+	background: -ms-linear-gradient(top, @startColor, @endColor);
+	background: -o-linear-gradient(top, @startColor, @endColor);
+}
+.horizontal-gradient (@startColor: #eee, @endColor: white) {
+ 	background-color: @startColor;
+	background-image: -webkit-gradient(linear, left top, right top, from(@startColor), to(@endColor));
+	background-image: -webkit-linear-gradient(left, @startColor, @endColor);
+	background-image: -moz-linear-gradient(left, @startColor, @endColor);
+	background-image: -ms-linear-gradient(left, @startColor, @endColor);
+	background-image: -o-linear-gradient(left, @startColor, @endColor);
+}
+
+.animation (@name, @duration: 300ms, @delay: 0, @ease: ease) {
+	-webkit-animation: @name @duration @delay @ease;
+	-moz-animation:    @name @duration @delay @ease;
+	-ms-animation:     @name @duration @delay @ease;
+}
+
+.transition (@transition) {
+	-webkit-transition: @transition;  
+	-moz-transition:    @transition;
+	-ms-transition:     @transition; 
+	-o-transition:      @transition;  
+}
+.transform(@string){
+	-webkit-transform:  @string;
+	-moz-transform: 	 @string;
+	-ms-transform: 		 @string;
+	-o-transform: 		 @string;
+}
+.scale (@factor) {
+	-webkit-transform: scale(@factor);
+	-moz-transform: 	 scale(@factor);
+	-ms-transform: 		 scale(@factor);
+	-o-transform: 		 scale(@factor);
+}
+.rotate (@deg) {
+	-webkit-transform: rotate(@deg);
+	-moz-transform: 	 rotate(@deg);
+	-ms-transform: 		 rotate(@deg);
+	-o-transform: 		 rotate(@deg);
+}
+.skew (@deg, @deg2) {
+	-webkit-transform:       skew(@deg, @deg2);
+	-moz-transform: 	 skew(@deg, @deg2);
+	-ms-transform: 		 skew(@deg, @deg2);
+	-o-transform: 		 skew(@deg, @deg2);
+}
+.translate (@x, @y:0) {
+	-webkit-transform:       translate(@x, @y);
+	-moz-transform: 	 translate(@x, @y);
+	-ms-transform: 		 translate(@x, @y);
+	-o-transform: 		 translate(@x, @y);
+}
+.translate3d (@x, @y: 0, @z: 0) {
+	-webkit-transform:       translate3d(@x, @y, @z);
+	-moz-transform: 	 translate3d(@x, @y, @z);
+	-ms-transform: 		 translate3d(@x, @y, @z);
+	-o-transform: 		 translate3d(@x, @y, @z);
+}
+.perspective (@value: 1000) {
+	-webkit-perspective: 	@value;
+	-moz-perspective: 	@value;
+	-ms-perspective: 	@value;
+	perspective: 		@value;
+}
+.transform-origin (@x:center, @y:center) {
+	-webkit-transform-origin: @x @y;
+	-moz-transform-origin:    @x @y;
+	-ms-transform-origin:     @x @y;
+	-o-transform-origin:      @x @y;
+}
+
+.reset-box-sizing (@size:content-box) {
+  &,
+  *,
+  *:before,
+  *:after {
+    .box-sizing(@size);
+  }
+}
+
+.truncate (@max-width: 250px) {
+  max-width: @max-width;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.background-size (@string: contain) {
+    -webkit-background-size: @string;
+    -moz-background-size: @string;
+    -o-background-size: @string;
+    background-size: @string;
+}
+
+.placeholder (@color: #999) {
+    &::-webkit-input-placeholder { /* WebKit browsers */
+        color: @color;
+    }
+    &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        color: @color;
+    }
+    &::-moz-placeholder { /* Mozilla Firefox 19+ */
+        color: @color;
+    }
+    &:-ms-input-placeholder { /* Internet Explorer 10+ */
+        color: @color;
+    }
+}
+
+/* ======= Social Media ======= */
+.icon-bar (@size: 96px, @cube-margin: 4px, @bg-color: @color-2) {
+  .icon {
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+    margin: @cube-margin;
+    width: @size;
+    height: @size;
+    font-size: 0;
+    text-indent: -9999px;
+  }
+
+  .icon-cube {
+    position: relative;
+    -webkit-perspective: 800px;
+            perspective: 800px;
+    overflow: visible;
+  }
+
+  .icon-cube::before,
+  .icon-cube::after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../images/social.png");
+    background-size: (@size*6) @size;
+    background-repeat: no-repeat;
+
+    content: "";
+    -webkit-transition: all 0.3s;
+            transition: all 0.3s;
+  }
+
+  .icon-cube::before {
+    z-index: 2;
+    background-color: @bg-color;
+  }
+
+  .icon-cube::after {
+    z-index: 1;
+    opacity: 0;
+    -webkit-transform: translateY(round(@size / 2)) rotateX(-90deg);
+            transform: translateY(round(@size / 2)) rotateX(-90deg);
+  }
+
+  .icon-cube:hover::before {
+    opacity: 0;
+    -webkit-transform: translateY(round(-1 * @size / 2)) rotateX(90deg);
+            transform: translateY(round(-1 * @size / 2)) rotateX(90deg);
+  }
+
+  .icon-cube:hover::after {
+    opacity: 1;
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+  }
+
+  /* facebook */
+  .icon-cube.facebook::before,
+  .icon-cube.facebook::after {
+    background-position: 0 0;
+  }
+
+  .icon-cube.facebook::after {
+    background-color: @facebook;
+  }
+
+  /* twitter */
+  .icon-cube.twitter::before,
+  .icon-cube.twitter::after {
+    background-position: (-1*@size) 0;
+  }
+
+  .icon-cube.twitter::after {
+    background-color: @twitter;
+  }
+
+  /* google plus */
+  .icon-cube.googleplus::before,
+  .icon-cube.googleplus::after {
+    background-position: (-2*@size) 0;
+  }
+
+  .icon-cube.googleplus::after {
+    background-color: @google;
+  }
+
+  /* pinterest */
+  .icon-cube.pinterest::before,
+  .icon-cube.pinterest::after {
+    background-position: (-3*@size) 0;
+  }
+
+  .icon-cube.pinterest::after {
+    background-color: @pinterest;
+  }
+
+  /* instagram */
+  .icon-cube.instagram::before,
+  .icon-cube.instagram::after {
+    background-position: (-4*@size) 0;
+  }
+
+  .icon-cube.instagram::after {
+    background-color: @instagram;
+  }
+
+  /* blogger */
+  .icon-cube.blogger::before,
+  .icon-cube.blogger::after {
+    background-position: (-5*@size) 0;
+  }
+
+  .icon-cube.blogger::after {
+    background-color: @blogger;
+  }
+}
+
+  
+
+
+

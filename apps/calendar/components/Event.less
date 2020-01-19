@@ -1,0 +1,73 @@
+@import "../../../less/theme-default.less";
+
+.savvy-event {
+  .title {
+    font-weight: 700;
+    font-size: 1em;
+    white-space: normal;
+  }
+
+	.time {
+    font-size: 0.7em;
+  }
+
+  @media only screen and (max-width : 768px) {
+    .title {
+      font-weight: 500;
+      font-size: 0.8em;
+      white-space: normal;
+    }
+
+    .time {
+      font-size: 0.6em;
+    }
+  }
+}
+
+.savvy-hover {
+  p {
+    margin-bottom: 0.5em;
+  }
+
+  .content {
+    position: relative;
+  }
+
+  .desc {
+    line-height: 1em;
+    height: 4.5em;
+  }
+
+  .closed {
+    color: red;
+    font-weight: bold;
+  }
+
+  .open {
+    font-weight: bold;
+  }
+
+  .popover-title {
+    color: white !important;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+
+  &.disabled {
+    .popover-title {
+      background-color: grey !important;
+    }
+  }
+
+  &.byop {
+    .popover-title {
+      background-color: darken(@color-2, 10%) !important;
+    }
+  }
+
+  &.paint-101 {
+    .popover-title {
+      background-color: darken(@color-3, 10%) !important;
+    }
+  }
+}

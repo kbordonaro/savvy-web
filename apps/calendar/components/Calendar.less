@@ -1,0 +1,30 @@
+@import "../../../less/theme-default.less";
+
+.savvy-calendar {
+  padding: 0 2.86em;
+
+  .big {
+    height: 50em;
+  }
+
+  .disabled {
+    background-color: grey;
+    cursor: default;
+  }
+
+  .byop {
+    background-color: @color-2;
+
+    &:hover {
+      background-color: lighten(@color-2, 10%);
+    }
+  }
+
+  .paint-101 {
+    background-color: darken(@color-3, 10%);
+
+    &:hover {
+      background-color: @color-3;
+    }
+  }
+}

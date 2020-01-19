@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".form").validate({messages:{name:{required:"Please enter your name"},email:{required:"Please enter your email"},message:{required:"Please enter your message"},comment:{required:"Please enter your comment"}}})});

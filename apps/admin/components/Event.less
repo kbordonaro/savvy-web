@@ -1,0 +1,40 @@
+@import "../../../less/theme-default.less";
+
+.savvy-event {
+  .title {
+    font-weight: 700;
+    font-size: 1em;
+    white-space: normal;
+  }
+
+  margin: 3px 0;
+  border-radius: 5px;
+
+  &.error {
+    background-image: repeating-linear-gradient(45deg, #ff0000, #ff0000 30px, #990000 30px, #990000 60px);
+  }
+
+  &.past {
+    background-image: repeating-linear-gradient(45deg, #666, #666 30px, #999 30px, #999 60px);
+  }
+
+  &.full {
+    background-image: repeating-linear-gradient(45deg, #000, #000 30px, #666 30px, #666 60px);
+  }
+
+	.time {
+    font-size: 0.7em;
+  }
+
+  @media only screen and (max-width : 768px) {
+    .title {
+      font-weight: 500;
+      font-size: 0.8em;
+      white-space: normal;
+    }
+
+    .time {
+      font-size: 0.6em;
+    }
+  }
+}

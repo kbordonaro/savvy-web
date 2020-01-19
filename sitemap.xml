@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="https://www.sitemaps.org/schemas/sitemap/0.9
+            https://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<url>
+  <loc>https://www.savvycreationsdesign.com/</loc>
+  <lastmod>2017-03-07T01:58:40+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.savvycreationsdesign.com/collection.html</loc>
+  <lastmod>2017-03-07T01:58:40+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://www.savvycreationsdesign.com/vintage.html</loc>
+  <lastmod>2017-03-07T01:58:40+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.savvycreationsdesign.com/creative.html</loc>
+  <lastmod>2017-03-07T01:58:40+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.savvycreationsdesign.com/antique.html</loc>
+  <lastmod>2017-03-07T01:58:39+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.savvycreationsdesign.com/workshops.html</loc>
+  <lastmod>2017-03-07T01:58:41+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://www.savvycreationsdesign.com/workshop-calendar.html</loc>
+  <lastmod>2017-03-07T01:58:41+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.savvycreationsdesign.com/parties.html</loc>
+  <lastmod>2017-03-07T01:58:40+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.savvycreationsdesign.com/products.html</loc>
+  <lastmod>2017-03-07T01:58:40+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://www.savvycreationsdesign.com/repurpose.html</loc>
+  <lastmod>2017-03-07T01:58:40+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://www.savvycreationsdesign.com/about.html</loc>
+  <lastmod>2017-03-07T01:58:39+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.savvycreationsdesign.com/contact.html</loc>
+  <lastmod>2017-03-07T01:58:40+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.60</priority>
+</url>
+</urlset>
