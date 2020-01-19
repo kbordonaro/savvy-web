@@ -9,4 +9,5 @@ This is the website for Savvy Creation Design Studio.  This is a Bootstrap web s
 
 ## Demonstration
 http://savvycreationsdesign.com/Portfolio/savvy/
+
 **NOTE: The payment feature has been disabled**
